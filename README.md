@@ -74,8 +74,7 @@ import Random
 
 var rawBuffer = UnsafeMutableRawBufferPointer.allocate(byteCount: 16, alignment: 1)
 
-defer 
-{
+defer {
     rawBuffer.deallocate()
 }
 
@@ -90,8 +89,7 @@ import Random
 
 var buffer = UnsafeMutableBufferPointer<UInt8>.allocate(capacity: 16)
 
-defer 
-{
+defer {
     buffer.deallocate()
 }
 
@@ -110,8 +108,7 @@ import Random
 
 let pointer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16)
 
-defer 
-{
+defer {
     pointer.deallocate()
 }
 
@@ -125,8 +122,7 @@ import Random
 
 let rawPointer = UnsafeMutableRawPointer.allocate(byteCount: 16, alignment: 1)
 
-defer 
-{
+defer {
     rawPointer.deallocate()
 }
 
